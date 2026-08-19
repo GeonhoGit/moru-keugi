@@ -1,0 +1,33 @@
+node_modules/
+.expo/
+.expo-shared/
+.expo-export-check/
+.expo-export-check-ios/
+dist/
+web-build/
+
+# 네이티브 프로젝트는 prebuild로 다시 만들 수 있다
+/android
+/ios
+
+# Windows에서 Gradle이 비ASCII 경로를 거부해 만든 ASCII 빌드용 junction
+/moru-build
+
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+.DS_Store
+Thumbs.db
+
+# 서명 키와 자격 증명은 절대 커밋하지 않는다
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+google-services.json
+GoogleService-Info.plist
+.env
+.env.local

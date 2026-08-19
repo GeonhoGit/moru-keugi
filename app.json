@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "모루 키우기",
+    "slug": "moru-keugi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "moru",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "backgroundColor": "#150f0c",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#150f0c"
+    },
+    "ios": {
+      "bundleIdentifier": "com.morukeugi.game",
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.morukeugi.game",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#150f0c"
+      },
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ]
+    },
+    "plugins": [
+      "expo-status-bar",
+      "expo-system-ui",
+      "expo-audio"
+    ],
+    "extra": {
+      "eas": {}
+    },
+    "icon": "./assets/icon.png"
+  }
+}

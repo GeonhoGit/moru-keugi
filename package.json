@@ -1,0 +1,45 @@
+{
+  "name": "moru-keugi",
+  "version": "0.1.0",
+  "private": true,
+  "description": "모루 키우기 — 대장간 클릭커 게임 (React Native + Expo)",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "simulate": "tsx scripts/simulate.ts",
+    "bundle:check": "expo export --platform android --output-dir .expo-export-check",
+    "sounds": "node scripts/generate-sounds.mjs",
+    "music": "node scripts/generate-music.mjs",
+    "audio": "npm run sounds && npm run music",
+    "icons": "tsx scripts/generate-icons.ts",
+    "assets": "npm run sounds && npm run music && npm run icons"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-navigation/bottom-tabs": "^7.18.16",
+    "@react-navigation/native": "^7.3.16",
+    "break_infinity.js": "^2.0.0",
+    "expo": "^57.0.13",
+    "expo-audio": "~57.0.3",
+    "expo-haptics": "~57.0.1",
+    "expo-status-bar": "~57.0.1",
+    "expo-system-ui": "~57.0.2",
+    "react": "19.2.3",
+    "react-native": "0.86.2",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.18",
+    "tsx": "^4.0.0",
+    "typescript": "~6.0.3",
+    "vitest": "^4.1.10"
+  },
+  "main": "index.js"
+}
